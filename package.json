@@ -5,7 +5,7 @@
   "main": "mongo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js -e js",
+    "dev": "nodemon src/db/index.js -e js",
     "golive": "lt --port 5500"
   },
   "keywords": [],
