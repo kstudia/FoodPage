@@ -1,24 +1,25 @@
 
 require('dotenv').config();
-const mongoose = require("mongoose");
 const express = require('express');
+const mongoose = require("mongoose");
+
 const app = express();
 const PORT = process.env.PORT || 3000
-mongoose.set('strictQuery', false)
+
 const path = require("path");
 
-const { json } = require("express");
-require('dotenv').config()
-const Register = require("./models/registers");
+
+const Register = require("./src/models/registers");
 const statick_path = path.join(__dirname, "../public");
 
-const connectDB = async ()=>{
-  try{
-    const conn= await mongoose.connect(process.env.MONGO_URI)
-    console.log(`MongoDB connected ${conn.connection.host}`)
-  }catch(error){
-  console.log(error)
-  process.exit(1)
+mongoose.set('strictQuery', false);
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(process.env.MONGO_URI);
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
+  } catch (error) {
+    console.log(error);
+    process.exit(1);
   }
 }
 
@@ -65,9 +66,9 @@ app.post("/login", async (req, res) => {
     res.status(400).send("Invalid email");
   }
 });
-
-connectDB().then(()=>{
-  app.listen(PORT, () =>{
-    console.log(`Listening on ${PORT}`)
+//Connect to the database before listening
+connectDB().then(() => {
+  app.listen(PORT, () => {
+      console.log("listening for requests");
   })
 })

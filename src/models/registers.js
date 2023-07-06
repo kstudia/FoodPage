@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const emplyeeSchema = new mongoose.Schema({
+const Schema = mongoose.Schema;
+const emplyeeSchema = new Schema({
     email:{
         type:String,
         require:true,
@@ -15,5 +16,6 @@ const emplyeeSchema = new mongoose.Schema({
     }
 
 })
+
 const Register = new mongoose.model("registers", emplyeeSchema);
 module.exports= Register;
