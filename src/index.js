@@ -1,4 +1,6 @@
 const express = require("express");
+require('dotenv').config()
+const mongoose = require("mongoose");
 const path = require("path");
 const app = express();
 const port = process.env.PORT || 3000;
@@ -7,7 +9,16 @@ require("./db/conn");
 
 const Register = require("./models/registers");
 const statick_path = path.join(__dirname, "../public");
-
+mongoose.set('strictQuery', false)
+const mongoDB = async ()=>{
+  try{
+    const conn= await mongoose.connect(process.env.MONGO_URL)
+    console.log(`MongoDB connected ${conn.connection.host}`)
+  }catch(error){
+  console.log(error)
+  process.exit(1)
+  }
+}
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(statick_path));
