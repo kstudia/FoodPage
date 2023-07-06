@@ -13,7 +13,7 @@ const statick_path = path.join(__dirname, "../public");
 
 const connectDB = async ()=>{
   try{
-    const conn= await mongoose.connect(process.env.MONGO_URL)
+    const conn= await mongoose.connect(process.env.MONGO_URI)
     console.log(`MongoDB connected ${conn.connection.host}`)
   }catch(error){
   console.log(error)
