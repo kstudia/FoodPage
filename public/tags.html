@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags || Final</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.png" alt="our recipes" id="logos" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+
+          <div class="nav-link contact-link2">
+            <a href="registerform.html" class="btn"> Register </a>
+          </div>
+          <div class="nav-link contact-link2">
+            <a href="login.html" class="btn">Login</a>
+          </div>
+          <div class="nav-link contact-link2">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <section class="tags-wrapper">
+        <!-- single tag -->
+        <a href="beef-tag.html" class="tag">
+          <h5>Beef</h5>
+          <p>6 recipe</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="rice-tag.html" class="tag">
+          <h5>Rice</h5>
+          <p>6 recipe</p>
+        </a>
+        <!-- end of single tag -->
+        <!-- single tag -->
+        <a href="soup-tag.html" class="tag">
+          <h5>Soup</h5>
+          <p>3 recipe</p>
+        </a>
+        <!-- end of single tag -->
+      </section>
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn">Get info</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Categories</h1>
+          <p>I am very sorry for such a small number of categories😋, but our site is just developing and we guarantee that there will be many more in the future! ༼ つ ◕_◕ ༽つ🍰🍔🍕</p>
+        </div>
+
+</div>
+    </main>
+    
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Klaudia Kucharska</span>
+      </p>
+    </footer>
+    <script src="./js/app.js" type="text/javascript">
+    </script>
+  </body>
+</html>

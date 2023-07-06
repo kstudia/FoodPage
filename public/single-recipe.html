@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe || Final</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.png" alt="our recipes" id="logos" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+
+          <div class="nav-link contact-link2">
+            <a href="registerform.html" class="btn"> Register </a>
+          </div>
+          <div class="nav-link contact-link2">
+            <a href="login.html" class="btn">Login</a>
+          </div>
+          <div class="nav-link contact-link2">
+            <button onclick="buttonColor()">
+              <img src="./assets/change.png" class="change" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="./assets/recipes/recipe-5.png"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Sous Vide Beef Brisket with Ancho Chili Sauce</h2>
+            <p>
+              Perfectly tender, melt in your mouth brisket, with a gentle
+              smokiness and a sauce that is full of ancho chili flavor and well
+              balanced smoky, earthy, sweet, and spicy flavors.
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>2 days.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>cook time</h5>
+                <p>30 min</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>6 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="tag-template.html">beef</a>
+              <a href="tag-template.html">breakfast</a>
+              <a href="tag-template.html">pancakes</a>
+              <a href="tag-template.html">food</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 1</p>
+                <div></div>
+              </header>
+              <p>
+                Prepare a thermocirculator and water bath according to
+                manufacturer's directions. Set thermocirculator to 128 degrees F
+                (53 degrees C) and allow water bath to come up to temperature.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 2</p>
+                <div></div>
+              </header>
+              <p>
+                While water heats, trim excess fat from the fat cap of the
+                brisket to about 1/4 inch. Do not remove all the fat, as this
+                will contribute to keeping the meat juicy. Pat brisket dry with
+                a paper towel.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 3</p>
+                <div></div>
+              </header>
+              <p>
+                Combine salt, onion powder, garlic powder, smoked paprika and
+                pepper in a small bowl. Completely cover all sides of the
+                brisket with the spice mixture.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 4</p>
+                <div></div>
+              </header>
+              <p>
+                Place the brisket in a large vacuum sealable bag. Seal bag
+                according to manufacturer's directions. Transfer vacuum sealed
+                brisket to warm water bath with thermocirculator, cover vessel
+                with aluminum foil to reduce evaporation, and cook undisturbed
+                for 48 hours. Remove brisket from bag, reserving cooking liquid
+                (you should have about 3 ½ cups cooking liquid). Strain cooking
+                liquid through a fine mesh sieve and discard any solids. Set
+                brisket aside on a plate or cutting board.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 5</p>
+                <div></div>
+              </header>
+              <p>
+                Place dried ancho chiles in a large, dry saucepan over medium
+                high heat. Cook, turning often, until chiles are blistered, and
+                aromatic. Remove chiles from heat and allow to cool briefly.
+                Once chiles have cooled enough to handle, remove stems and
+                seeds, and tear chiles into 2-inch pieces. Place torn chiles in
+                a medium bowl with 1 cup of boiling water and 2 cups of
+                strained, reserved cooking liquid; allow to stand until chiles
+                have softened, about 10 minutes.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 6</p>
+                <div></div>
+              </header>
+              <p>
+                Meanwhile, heat 2 tablespoons canola oil in the same saucepan
+                over medium-high heat. Add onions and smashed garlic cloves;
+                cook, stirring often, until onions and garlic have softened,
+                about 5 minutes. Add tomato paste and cook, stirring often, for
+                1 minute. Add red wine and allow mixture to reduce until most of
+                the liquid excep tfor about 1/4 cup has evaporated, stirring
+                occasionally. Remove from heat.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 7</p>
+                <div></div>
+              </header>
+              <p>
+                Remove softened chiles from liquid, and strain liquid through a
+                fine mesh sieve, reserving 1/2 cup of the strained liquid.
+                Combine softened chiles, 1/2 cup reserved liquid, onion mixture,
+                and ketchup in a blender; blend until smooth. Add unsalted
+                butter and sherry vinegar to the mixture and process until
+                smooth. If you want a spicier sauce, add cayenne pepper or hot
+                sauce to taste.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 8</p>
+                <div></div>
+              </header>
+              <p>
+                Preheat a grill or grill pan to medium high (350 degrees F to
+                400 degrees F / 175 degrees C to 200 degrees C).
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 9</p>
+                <div></div>
+              </header>
+              <p>
+                Pat brisket dry with paper towels and rub with remaining 2
+                tablespoons oil. Place on the preheated grill and grill until
+                grill marks appear, the outside is slightly charred, and the
+                brisket is heated through, about 5 minutes per side.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 10</p>
+                <div></div>
+              </header>
+              <p>
+                Transfer brisket to a cutting board, let stand for 5 minutes to
+                rest, and slice thinly against the grain of the meat and serve
+                hot with sauce.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">1 (6 pound) beef brisket</p>
+              <p class="single-ingredient">2 tablespoons kosher salt</p>
+              <p class="single-ingredient">2 teaspoons onion powder</p>
+              <p class="single-ingredient">2 teaspoons garlic powder</p>
+              <p class="single-ingredient">1 teaspoon smoked paprika</p>
+              <p class="single-ingredient">1 teaspoon ground black pepper</p>
+              <p class="single-ingredient">1 1/2 cups dry pancake mix</p>
+              <p class="single-ingredient">
+                2 ounces dried ancho chiles (about 4 medium dried chiles)
+              </p>
+              <p class="single-ingredient">¼ cup canola oil, divided</p>
+              <p class="single-ingredient">2 cups chopped red onion</p>
+              <p class="single-ingredient">
+                4 medium garlic cloves, peeled and smashed
+              </p>
+              <p class="single-ingredient">2 tablespoons tomato paste</p>
+              <p class="single-ingredient">¾ cup dry red wine</p>
+              <p class="single-ingredient">½ cup ketchup</p>
+              <p class="single-ingredient">¼ cup melted unsalted butter</p>
+              <p class="single-ingredient">1 tablespoon sherry vinegar</p>
+              <p class="single-ingredient">
+                ½ teaspoon cayenne pepper or hot sauce, as desired (Optional)
+              </p>
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Two Pans</p>
+              <p class="single-tool">Large Heavy Pot With Lid</p>
+              <p class="single-tool">Measuring Spoons</p>
+              <p class="single-tool">Measuring Cups</p>
+              <p class="single-tool">Baker's Sleeve</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Klaudia Kucharska</span>
+      </p>
+    </footer>
+    <script>
+      $("#GFG_UP").text("Click on button to change the background color");
+      $("button").on("click", function () {
+        $("body").css("background", "#A9A9A9");
+
+        $("#GFG_DOWN").text("Background Color Changed!");
+      });
+    </script>
+  </body>
+</html>

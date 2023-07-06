@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Recipes || Final</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.png" alt="our recipes" id="logos" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+          </div>
+
+          <div class="nav-link contact-link2">
+            <a href="registerform.html" class="btn"> Register </a>
+          </div>
+          <div class="nav-link contact-link2">
+            <a href="login.html" class="btn">Login</a>
+          </div>
+          <div class="nav-link contact-link2">
+            <button class="disabled" onclick="buttonColor()">
+              <img src="./assets/change.png" class="change" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- main -->
+    <main class="page">
+      <!-- header -->
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Masters Recipies</h1>
+            <h4>no fluff, just recipes</h4>
+          </div>
+        </div>
+      </header>
+      <!-- end of header -->
+      <section class="recipes-container">
+        <!-- tag container -->
+        <div class="tags-container">
+          <h4>recipes</h4>
+          <div class="tags-list">
+            <a href="beef-tag.html">Beef (6)</a>
+            <a href="rice-tag.html">Rice (6)</a>
+            <a href="soup-tag.html">Soup (3)</a>
+          </div>
+        </div>
+
+        <!-- end of tag container -->
+        <!-- recipes list -->
+        <div class="recipes-list">
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-11.png"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Gourmet Mushroom Risotto</h5>
+            <p>Prep : 25min | Cook : 10min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-5.png"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sous Vide Beef Brisket with Ancho Chili Sauce</h5>
+            <p>Prep : 2 days | Cook : 30 min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-6.png"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Homemade Smash Burgers</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-10.png"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Braised Oxtail</h5>
+            <p>Prep : 3 hours | Cook : 45min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-18.png"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Easy Beef Soup</h5>
+            <p>Prep : 30min | Cook : 12min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-12.png"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Best Spanish Rice</h5>
+            <p>Prep : 30min | Cook : 12min</p>
+          </a>
+          <!-- end of single recipe -->
+        </div>
+        <!-- end of recipes list -->
+      </section>
+    </main>
+    <!-- end of main -->
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Klaudia Kucharska</span>
+      </p>
+    </footer>
+    <script>
+      $("#GFG_UP").text("Click on button to change the background color");
+      $("button").on("click", function () {
+        $("body").css("background", "#A9A9A9");
+        $("#GFG_DOWN").text("Background Color Changed!");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Recipes || Final</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+  </head>
+  <body>
+          <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.png" alt="our recipes" id="logos" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Tags </a>
+          <a href="recipes.html" class="nav-link"> Recipes </a>
+
+        <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> Contact </a>
+        </div>
+        
+        <div class="nav-link contact-link2">
+         <a href="registerform.html" class="btn"> Register </a>
+        </div>
+        <div class="nav-link contact-link2">
+            <a href="login.html" class="btn">Login</a>
+        </div>
+        <div class="nav-link contact-link2">
+          <button onclick="buttonColor()" >
+          <img src="./assets/change.png" class="change" /></button>
+        </div>
+        </div>
+      </div>
+    </nav>
+          </div>
+          </div>
+        </div>
+      </nav>
+    <main>
+      <form action="/register" method="post">
+        <div class="form-container">
+          <div class="form-group">
+            <h1>Please Fill the Form !</h1>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="emailvalue" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="passwordd" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input type="password" name="confpassword" class="form-control" id="exampleInputPassword2" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btnform btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Klaudia Kucharska</span>
+      </p>
+    </footer>
+    <script>
+      $('#GFG_UP').text("Click on button to change the background color");
+      $('button').on('click', function() {
+          $('body').css('background', '#A9A9A9');
+
+          $('#GFG_DOWN').text("Background Color Changed!");
+      });
+  </script>
+  </body>
+</html>
