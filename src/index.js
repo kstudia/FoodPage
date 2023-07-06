@@ -21,11 +21,7 @@ const connectDB = async ()=>{
   }
 }
 
-connectDB().then(()=>{
-  app.listen(PORT, () =>{
-    console.log(`Listening on ${PORT}`)
-  })
-})
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(statick_path));
@@ -69,3 +65,8 @@ app.post("/login", async (req, res) => {
   }
 });
 
+connectDB().then(()=>{
+  app.listen(PORT, () =>{
+    console.log(`Listening on ${PORT}`)
+  })
+})
