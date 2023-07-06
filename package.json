@@ -5,7 +5,7 @@
   "main": "mongo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/db/index.js -e js",
+    "dev": "nodemon src/index.js -e js",
     "golive": "lt --port 5500"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "hbs": "^4.2.0",
     "localtunnel": "^2.0.2",

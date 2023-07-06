@@ -1,13 +1,12 @@
-const mongoose = require("mongoose");
-require('dotenv').config();
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 3000
-mongoose.set('strictQuery', false)
-const path = require("path");
-
-
+const express = require("express");
 require('dotenv').config()
+const mongoose = require("mongoose");
+const path = require("path");
+const app = express();
+
+const { json } = require("express");
+
+
 const Register = require("./models/registers");
 const statick_path = path.join(__dirname, "../public");
 
@@ -17,6 +16,7 @@ app.use(express.static(statick_path));
 app.get("/", (req, res) => {
   res.render("index");
 });
+
 app.post("/register", async (req, res) => {
   try {
     const password = req.body.passwordd;
@@ -54,22 +54,6 @@ app.post("/login", async (req, res) => {
   }
 });
 
-
-const connectDB = async ()=>{
-  try{
-    const conn= await mongoose.connect(process.env.MONGO_URL)
-    console.log(`MongoDB connected ${conn.connection.host}`)
-  }catch(error){
-  console.log(error)
-  process.exit(1)
-  }
-}
-
-app.get('/', (req, res) =>{
-  res.send({title:'books'});
+app.listen(port, () => {
+  console.log(`Port is running at port ${port}`);
 });
-connectDB().then(()=>{
-  app.listen(PORT, () =>{
-    console.log(`Listening on ${PORT}`)
-  })
-})
