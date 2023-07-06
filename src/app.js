@@ -3,6 +3,7 @@ require('dotenv').config()
 const mongoose = require("mongoose");
 const path = require("path");
 const app = express();
+const PORT = process.env.PORT || 3000
 
 const { json } = require("express");
 
