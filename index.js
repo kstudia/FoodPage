@@ -10,7 +10,7 @@ const path = require("path");
 
 
 const Register = require("./src/models/registers");
-const statick_path = path.join(__dirname, "../public");
+const statick_path = path.join(__dirname, "/public");
 
 mongoose.set('strictQuery', false);
 const connectDB = async () => {
